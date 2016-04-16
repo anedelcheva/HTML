@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List Items</title>
+  <style>
+    li {text-indent: 10px;}
+    ol
+    {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    ul
+    {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    ul li
+    {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    ol li
+    {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    ol.alpha
+    {
+      list-style-position: inside;
+      padding-left: initial;
+      list-style-type: lower-alpha;
+    }
+    ol.decimal
+    {
+      list-style-position: inside;
+      padding-left: initial;
+    }
+    ul.disc
+    {
+      list-style-position: inside;
+      padding-left: initial;
+    }
+  </style>
+  </head>
+  <body>
+    <p>Preceding Text</p>
+    <ol type = "I">
+      <li>List Item 1</li>
+        <ol type = "а", class = "alpha">
+          <li>Nested Item 1.1</li>
+          <li>Nested Item 1.2</li>
+        </ol>
+      <li>List Item 2</li>
+        <ol class="decimal">
+          <li>Nested Item 2.1</li>
+          <li>Nested Item 2.2</li>
+            <ul type = "circle">
+              <li>Nested Item 2.2.1</li>
+              <li>Nested Item 2.2.2</li>
+                <ul type = "square">
+                  <li>Nested Item 2.2.2.1</li>
+                  <li>Nested Item 2.2.2.2</li>
+                </ul>
+              <li>Nested Item 2.2.3</li>
+            </ul>
+          <li>Nested Item 2.3</li>
+        </ol>
+      <li>List Item 3</li>
+        <ul type = "disc", class="disc">
+          <li>Nested Item 3.1</li>
+          <li>Nested Item 3.1</li>
+          <li>Nested Item 3.1</li>
+        </ul>
+    </ol>
+  </body>
+<html>
